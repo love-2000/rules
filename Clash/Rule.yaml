@@ -10,7 +10,9 @@
 - RULE-SET,Disney Plus,Disney
 
 - RULE-SET,Bilibili,Asian TV
-- RULE-SET,iQiyi,Asian TV
+- RULE-SET,IQ,Asian TV
+- RULE-SET,IQIYI,Asian TV
+- RULE-SET,HBO Go,Asian TV
 - RULE-SET,Letv,Asian TV
 # - RULE-SET,MOO,Asian TV
 - RULE-SET,Netease Music,Asian TV
@@ -30,7 +32,7 @@
 - RULE-SET,encoreTVB,Global TV
 - RULE-SET,Fox Now,Global TV
 - RULE-SET,Fox+,Global TV
-- RULE-SET,HBO,Global TV
+- RULE-SET,HBO Max,Global TV
 - RULE-SET,Hulu Japan,Global TV
 - RULE-SET,Hulu,Global TV
 - RULE-SET,Japonx,Global TV
@@ -76,7 +78,9 @@ script:
             "YouTube": "YouTube",
             "Disney Plus": "Disney",
             "Bilibili": "Asian TV",
-            "iQiyi": "Asian TV",
+            "IQ": "Asian TV",
+            "IQIYI": "Asian TV",
+            "HBO Go": "Asian TV",
             "Letv": "Asian TV",
             "Netease Music": "Asian TV",
             "Tencent Video": "Asian TV",
@@ -94,7 +98,7 @@ script:
             "encoreTVB": "Global TV",
             "Fox Now": "Global TV",
             "Fox+": "Global TV",
-            "HBO": "Global TV",
+            "HBO Max": "Global TV",
             "Hulu Japan": "Global TV",
             "Hulu": "Global TV",
             "Japonx": "Global TV",
@@ -195,11 +199,23 @@ rule-providers:
     url: 'https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Media/Bilibili.yaml'
     path: ./Rules/Media/Bilibili
     interval: 86400
-  iQiyi:
+  IQ:
     type: http
     behavior: classical
-    url: 'https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Media/iQiyi.yaml'
-    path: ./Rules/Media/iQiyi
+    url: 'https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Media/IQ.yaml'
+    path: ./Rules/Media/IQI
+    interval: 86400
+  IQIYI:
+    type: http
+    behavior: classical
+    url: 'https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Media/IQIYI.yaml'
+    path: ./Rules/Media/IQYI
+    interval: 86400
+  HBO Go:
+    type: http
+    behavior: classical
+    url: 'https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Media/HBO%20Go.yaml'
+    path: ./Rules/Media/HBO_Go
     interval: 86400
   Letv:
     type: http
@@ -315,11 +331,11 @@ rule-providers:
     url: 'https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Media/Fox%2B.yaml'
     path: ./Rules/Media/Fox+
     interval: 86400
-  HBO:
+  HBO Max:
     type: http
     behavior: classical
-    url: 'https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Media/HBO.yaml'
-    path: ./Rules/Media/HBO
+    url: 'https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Media/HBO%20Max.yaml'
+    path: ./Rules/Media/HBO_Max
     interval: 86400
   Hulu Japan:
     type: http
