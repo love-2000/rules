@@ -47,7 +47,6 @@ PROCESS-NAME,ss-local
 
 # > Steam
 USER-AGENT,Steam*
-DOMAIN-SUFFIX,steamcontent.com
 DOMAIN-SUFFIX,steampowered.com
 
 DOMAIN-SUFFIX,steamchina.com
